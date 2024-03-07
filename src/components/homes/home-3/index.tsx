@@ -3,9 +3,8 @@ import React from 'react'
 import HeaderThree from '@/layouts/headers/HeaderThree'
 import HeroAreaHomeThree from './HeroAreaHomeThree'
 import ServiceAreaHomeThree from './ServiceAreaHomeThree'
-import ProjectAreaHomeThree from './ProjectAreaHomeThree'
-import CommentForm from '@/components/forms/CommentForm'
 import TestimonialAreaHomeTwo from '../home-2/TestimonialAreaHomeTwo'
+import ContactArea from '@/components/contact/ContactArea'
 
 const HomeThree = () => {
   return (
@@ -17,7 +16,7 @@ const HomeThree = () => {
             <HeroAreaHomeThree />
             <ServiceAreaHomeThree />
             <TestimonialAreaHomeTwo />
-            <CommentForm />
+            <ContactArea />
           </main>
         </div>
       </div>
