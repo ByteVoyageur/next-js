@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
-import circle_img from '@/assets/img/footer/footer-circle-img.png'
 import service_shape_1 from '@/assets/img/portfolio/shape-1.png'
 import service_shape_2 from '@/assets/img/portfolio/shape-2.png'
 import service_star_icon from '@/assets/img/portfolio/star.png'
@@ -143,7 +142,7 @@ const ServiceAreaHomeThree = ({ style }: any) => {
                     </div>
                     <div className='tp-service-3__content'>
                       <h3 className='tp-service-3__content-title'>
-                        <Link href='/service-details'>{item.title}</Link>
+                        <Link href='#'>{item.title}</Link>
                       </h3>
                       <p>{item.sm_des}</p>
                       <div className='tp-service-3__content-tag'>
@@ -154,7 +153,7 @@ const ServiceAreaHomeThree = ({ style }: any) => {
                   </div>
                 ))}
                 <div className='tp-service-3__btn-box'>
-                  <Link href='/contact'>{btn_text}</Link>
+                  <Link href='#'>{btn_text}</Link>
                 </div>
               </div>
             </div>

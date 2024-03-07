@@ -96,7 +96,7 @@ const HeroAreaHomeThree = () => {
               </div>
               <div className='tp-hero-3__btn-box tp_wrap_anim d-flex align-items-center justify-content-start justify-content-md-center'>
                 <div className='tp-btn-bounce-3'>
-                  <Link className='tp-btn-blue' href='/portfolio'>
+                  <Link className='tp-btn-blue' href='#'>
                     <span className='text'>My Projects</span>
 
                     <span className='icon'>

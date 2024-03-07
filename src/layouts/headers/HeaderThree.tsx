@@ -241,40 +241,12 @@ const HeaderThree = () => {
                       </span>
                     </Link>
                   </div>
-                  <div className='tp-header-3__bar'>
-                    <button
-                      className='tp-menu-bar tp-offcanvas-open-btn'
-                      onClick={() => setShowCanvas(true)}
-                    >
-                      <svg
-                        width='32'
-                        height='10'
-                        viewBox='0 0 32 10'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          d='M31 1H1'
-                          stroke='currentcolor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                        />
-                        <path
-                          d='M31 9H1'
-                          stroke='currentcolor'
-                          strokeWidth='2'
-                          strokeLinecap='round'
-                        />
-                      </svg>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </header>
-
       <header>
         <div className='tp-header-3__area tp-header-transparent tp-header-3__ptlr tp-int-menu tp-header-sticky-cloned'>
           <div className='container-fluid'>
