@@ -1,20 +1,17 @@
-
-import React from 'react'; 
-import Wrapper from '@/layouts/Wrapper';
-import HomeTwo from '@/components/homes/home-2';
-
+import React from 'react'
+import Wrapper from '@/layouts/Wrapper'
+import HomeTwo from '@/components/homes/home-2'
 
 export const metadata = {
-  title: "Home Two - Diego - Personal Creative Portfolio & Resume Next js Template",
-};
-
+  title: "xiaosong's Portfolio",
+}
 
 const index = () => {
   return (
     <Wrapper>
       <HomeTwo />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default index;
+export default index

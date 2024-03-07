@@ -90,11 +90,7 @@ const HeroAreaHomeThree = () => {
             <div className='col-xl-12'>
               <div className='tp-hero-3__content'>
                 <h3 className='tp-hero-3__title tp-char-animation'>
-                  Xiaosong{' '}
-                  <span>
-                    <Image src={hero_img} alt='image-here' />
-                  </span>{' '}
-                  <br />
+                  Xiaosong <br />
                   Web Developer
                 </h3>
               </div>

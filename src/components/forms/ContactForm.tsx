@@ -107,7 +107,6 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='contact-inner__wrapper'>
           <div className='postbox__comment-form'>
-            <h3 className='contact-inner__form-title'>Request A Quote</h3>
             <div className='row gx-20'>
               <div className='col-xxl-6 col-xl-6 col-lg-6'>
                 <div className='postbox__comment-input mb-35'>

@@ -110,26 +110,6 @@ const ServiceAreaHomeThree = ({ style }: any) => {
           style ? 'sv-iiner__customize' : ''
         } black-bg-2 pt-150 pb-125 z-index-1`}
       >
-        <div className='tp-service-3__circle-img'>
-          <span className='text-img'>
-            <Image src={circle_img} alt='image-here' />
-          </span>
-          <div className='shape d-none d-lg-block'>
-            <svg
-              width='260'
-              height='70'
-              viewBox='0 0 260 70'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M68.7285 34.1352C48.3941 10.6976 13.8796 0.514191 0 0.514191C93.4783 0.514191 276.081 -0.642708 258.863 0.514191C236.79 1.99739 217.224 6.94161 191.137 34.1352C140.468 93.9609 98.3272 68.2507 68.7285 34.1352Z'
-                fill='currentcolor'
-              />
-            </svg>
-          </div>
-        </div>
-
         <div className='tp-service-3__shape-1'>
           <Image src={service_shape_1} alt='image-here' />
         </div>
