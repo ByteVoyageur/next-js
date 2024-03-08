@@ -38,7 +38,10 @@ const ProjectAreaHomeThree = () => {
 
   return (
     <>
-      <div className='tp-project-3__area p-relative black-bg-3 pt-110'>
+      <div
+        id='projectAreaHomeThree'
+        className='tp-project-3__area p-relative black-bg-3 pt-110'
+      >
         <div className='container'>
           <div className='row'>
             <div className='col-xl-12'>
