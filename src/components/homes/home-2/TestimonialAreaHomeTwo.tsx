@@ -146,7 +146,10 @@ const TestimonialAreaHomeTwo = () => {
 
   return (
     <>
-      <div className='section'>
+      <div id='testimonial-area-home-2' className='section'>
+        <div className='tp-project-3__title-box pb-30 text-center portfolio-sec-pin'>
+          <h3 className='tp-section-title-3 tp_title_anim'>Other Projects</h3>
+        </div>
         <div className='tp-hero-2__bg black-bg-3 tp-hero-2__space-4 d-flex align-items-center justify-content-start p-relative z-index-1 fix'>
           <div className='tp-hero-2__boder-circle'>
             <span></span>

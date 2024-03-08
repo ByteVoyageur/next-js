@@ -58,7 +58,10 @@ const ContactArea = () => {
 
   return (
     <>
-      <div className='contact-inner__area contact-inner__ptb p-relative black-bg-3'>
+      <div
+        id='contact-area'
+        className='contact-inner__area contact-inner__ptb p-relative black-bg-3'
+      >
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-xl-11 offset-xl-1'>

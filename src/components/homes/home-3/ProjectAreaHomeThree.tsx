@@ -65,7 +65,7 @@ const ProjectAreaHomeThree = () => {
                     }}
                     onMouseMove={(e) => moveText(e, index)}
                   >
-                    <Link href='#'>
+                    <Link href='https://kasa.xiaosong.fr/'>
                       <Image
                         src={img}
                         style={{ height: 'auto' }}

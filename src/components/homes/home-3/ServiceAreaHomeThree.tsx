@@ -104,7 +104,7 @@ const ServiceAreaHomeThree = ({ style }: any) => {
   return (
     <>
       <div
-        id='service'
+        id='service-area-3'
         className={`tp-service-3__area services-panel-area tp-service-3__overlay-bg ${
           style ? 'sv-iiner__customize' : ''
         } black-bg-2 pt-150 pb-125 z-index-1`}

@@ -20,7 +20,10 @@ const scrollTo = () => {
 const HeroAreaHomeThree = () => {
   return (
     <>
-      <div className='tp-hero-3__area black-bg-3 tp-hero-3__ptb z-index-1 smooth p-relative tp-btn-trigger-3'>
+      <div
+        id='hero-area-home'
+        className='tp-hero-3__area black-bg-3 tp-hero-3__ptb z-index-1 smooth p-relative tp-btn-trigger-3'
+      >
         <div className='tp-hero-3__shape-1'>
           <Image src={hero_shape_1} alt='image-here' />
         </div>

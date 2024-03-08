@@ -6,6 +6,7 @@ import ServiceAreaHomeThree from './ServiceAreaHomeThree'
 import ProjectAreaHomeThree from './ProjectAreaHomeThree'
 import TestimonialAreaHomeTwo from '../home-2/TestimonialAreaHomeTwo'
 import ContactArea from '@/components/contact/ContactArea'
+import FooterFour from '@/layouts/footers/FooterFour'
 
 const HomeThree = () => {
   return (
@@ -20,6 +21,7 @@ const HomeThree = () => {
             <TestimonialAreaHomeTwo />
             <ContactArea />
           </main>
+          <FooterFour />
         </div>
       </div>
     </>
