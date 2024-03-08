@@ -152,9 +152,6 @@ const ServiceAreaHomeThree = ({ style }: any) => {
                     </div>
                   </div>
                 ))}
-                <div className='tp-service-3__btn-box'>
-                  <Link href='#'>{btn_text}</Link>
-                </div>
               </div>
             </div>
           </div>

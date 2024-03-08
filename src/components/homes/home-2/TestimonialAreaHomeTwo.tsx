@@ -147,108 +147,116 @@ const TestimonialAreaHomeTwo = () => {
   return (
     <>
       <div id='testimonial-area-home-2' className='section'>
-        <div className='tp-project-3__title-box pb-30 text-center portfolio-sec-pin'>
-          <h3 className='tp-section-title-3 tp_title_anim'>Other Projects</h3>
-        </div>
-        <div className='tp-hero-2__bg black-bg-3 tp-hero-2__space-4 d-flex align-items-center justify-content-start p-relative z-index-1 fix'>
-          <div className='tp-hero-2__boder-circle'>
-            <span></span>
-          </div>
-          <div className='tp-portfolio-shape'>
-            <Image
-              className='tp-portfolio-shape-2-1 tp-zoom-in-out'
-              src={shape1}
-              alt='image-here'
-            />
-          </div>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-xl-12'>
-                <div className='tp-3d-slide-container'>
-                  <span className='tp-3d-slide-arrow tp-3d-slide-arrow-left z-index-9'>
-                    <svg
-                      width='16'
-                      height='16'
-                      viewBox='0 0 16 16'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        d='M15 8H1'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                      <path
-                        d='M8 1L1 8L8 15'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
-                  </span>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-xl-12'>
+              <div className='tp-project-3__title-box pb-30 text-center portfolio-sec-pin'>
+                <h3
+                  id='other-works-title'
+                  className='tp-section-title-3 tp_title_anim'
+                >
+                  Other Projects
+                </h3>
+              </div>
 
-                  <span className='tp-3d-slide-arrow tp-3d-slide-arrow-right z-index-9'>
-                    <svg
-                      width='16'
-                      height='16'
-                      viewBox='0 0 16 16'
-                      fill='none'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        d='M1 8H15'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                      <path
-                        d='M8 1L15 8L8 15'
-                        stroke='currentColor'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
-                  </span>
+              <div className='tp-hero-2__boder-circle'>
+                <span></span>
+              </div>
+              <div className='tp-portfolio-shape'>
+                <Image
+                  className='tp-portfolio-shape-2-1 tp-zoom-in-out'
+                  src={shape1}
+                  alt='image-here'
+                />
+              </div>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-xl-12'>
+              <div className='tp-3d-slide-container'>
+                <span className='tp-3d-slide-arrow tp-3d-slide-arrow-left z-index-9'>
+                  <svg
+                    width='16'
+                    height='16'
+                    viewBox='0 0 16 16'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M15 8H1'
+                      stroke='currentColor'
+                      strokeWidth='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                    <path
+                      d='M8 1L1 8L8 15'
+                      stroke='currentColor'
+                      strokeWidth='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                  </svg>
+                </span>
 
-                  <div className='tp-3d-slide-wrapper' id='tp-3d-slide-wrapper'>
-                    {testimonial_data.map((item, index) => (
-                      <div
-                        key={index}
-                        className='tp-3d-slide tp-hover-reveal-text'
-                        ref={(element) => {
-                          hoverTextRefs[index] = React.createRef()
-                          hoverTextRefs[index].current = element
+                <span className='tp-3d-slide-arrow tp-3d-slide-arrow-right z-index-9'>
+                  <svg
+                    width='16'
+                    height='16'
+                    viewBox='0 0 16 16'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M1 8H15'
+                      stroke='currentColor'
+                      strokeWidth='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                    <path
+                      d='M8 1L15 8L8 15'
+                      stroke='currentColor'
+                      strokeWidth='2'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    />
+                  </svg>
+                </span>
+
+                <div className='tp-3d-slide-wrapper' id='tp-3d-slide-wrapper'>
+                  {testimonial_data.map((item, index) => (
+                    <div
+                      key={index}
+                      className='tp-3d-slide tp-hover-reveal-text'
+                      ref={(element) => {
+                        hoverTextRefs[index] = React.createRef()
+                        hoverTextRefs[index].current = element
+                      }}
+                      onMouseMove={(e) => moveText(e, index)}
+                    >
+                      <Link
+                        href='#'
+                        className='tp-portfolio-item-2 include-bg'
+                        style={{
+                          backgroundImage: `url(${item.brand_img.src})`,
                         }}
-                        onMouseMove={(e) => moveText(e, index)}
                       >
-                        <Link
-                          href='#'
-                          className='tp-portfolio-item-2 include-bg'
-                          style={{
-                            backgroundImage: `url(${item.brand_img.src})`,
-                          }}
-                        >
-                          <div className='tp-portfolio-meta-2'>
-                            <span>{item.brand_tag}</span>
-                            <span>{item.time}</span>
-                          </div>
-                          <h3 className='tp-portfolio-title-2'>
-                            {item.brand_name}
-                          </h3>
-                          <div className='tp-portfolio-view tp-portfolio-view-btn'>
-                            <span>
-                              View <br /> Work
-                            </span>
-                          </div>
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
+                        <div className='tp-portfolio-meta-2'>
+                          <span>{item.brand_tag}</span>
+                          <span>{item.time}</span>
+                        </div>
+                        <h3 className='tp-portfolio-title-2'>
+                          {item.brand_name}
+                        </h3>
+                        <div className='tp-portfolio-view tp-portfolio-view-btn'>
+                          <span>
+                            View <br /> Work
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

@@ -3,10 +3,25 @@
     1.3 Default Spacing
 ---------------------------------*/
 
-.pt-280{
-    padding-top: 280px;
+.pt-280 {
+  padding-top: 280px;
 }
 
-.pt-320{
-    padding-top: 320px;
+.pt-320 {
+  padding-top: 320px;
+}
+
+#projectAreaHomeThree {
+  padding-bottom: 20px;
+}
+
+#other-works-title {
+  @media (min-width: 1200px) {
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+}
+
+#contact-area {
+  padding-top: 170px;
 }
