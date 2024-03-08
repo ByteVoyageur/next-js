@@ -219,7 +219,7 @@ const HeaderThree = () => {
                     </label>
                   </div>
                   <div className='tp-header-3__btn d-none d-md-block'>
-                    <Link className='tp-btn-white' href='/contact'>
+                    <Link className='tp-btn-white' href='#'>
                       <span className='text'>Let's Talk</span>
                       <span>
                         <svg
