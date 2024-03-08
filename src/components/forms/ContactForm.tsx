@@ -21,14 +21,6 @@ const schema = yup
   })
   .required()
 
-const budget_categorys = [
-  { id: '10_20k', title: '10-20k' },
-  { id: '30_40k', title: '30-40k' },
-  { id: '40_50k', title: '40-50k' },
-  { id: '50_100k', title: '50-100k' },
-  { id: 'greater_than_100k', title: '> 100k' },
-]
-
 const ContactForm = () => {
   const [isFocused, setIsFocused] = useState<boolean>(false)
   const [isFocused2, setIsFocused2] = useState<boolean>(false)
@@ -42,16 +34,38 @@ const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm<FormData>({ resolver: yupResolver(schema) })
-  const onSubmit = (data: FormData) => {
-    const notify = () => toast('Message send successful')
-    notify()
+
+  const onSubmit = async (data: FormData) => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      const responseData = await response.json()
+
+      if (response.ok) {
+        toast('Message sent successfully')
+        console.log('Server Response:', responseData)
+        reset() // Reset form fields
+      } else {
+        // Handle server errors or invalid responses
+        toast('Failed to send message. Please try again.')
+        console.error('Server Error:', responseData)
+      }
+    } catch (error) {
+      // Handle network errors
+      console.error('Network Error:', error)
+      toast('Network error. Please try again.')
+    }
+
+    // Reset focus states
     setIsFocused(false)
     setIsFocused2(false)
     setIsFocused3(false)
     setIsFocused4(false)
-
-    reset()
-    console.log(data)
   }
 
   // handle focus and blur events
