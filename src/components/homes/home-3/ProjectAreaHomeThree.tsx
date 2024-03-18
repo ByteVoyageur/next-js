@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Image, { StaticImageData } from 'next/image'
 
@@ -17,8 +17,21 @@ const project_imgs: DataType = [
   project_img_4,
 ]
 
+const links = [
+  'https://xiaosong.fr/booki/',
+  'https://xiaosong.fr/ohmyfood/',
+  'https://kasa.xiaosong.fr/',
+  'https://banque.xiaosong.fr/',
+]
+
 const ProjectAreaHomeThree = () => {
   const hoverTextRefs: React.RefObject<HTMLDivElement>[] | any = []
+  useEffect(() => {
+    return () => {
+      hoverTextRefs.forEach((ref) => (ref.current = null))
+    }
+  }, [])
+
   const moveText = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
     const hoverTextRef = hoverTextRefs[index]
 
@@ -65,7 +78,7 @@ const ProjectAreaHomeThree = () => {
                     }}
                     onMouseMove={(e) => moveText(e, index)}
                   >
-                    <Link href='https://kasa.xiaosong.fr/'>
+                    <Link href={links[index]}>
                       <Image
                         src={img}
                         style={{ height: 'auto' }}
