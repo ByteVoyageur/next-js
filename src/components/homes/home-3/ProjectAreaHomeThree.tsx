@@ -4,10 +4,10 @@ import React from 'react'
 import Link from 'next/link'
 import Image, { StaticImageData } from 'next/image'
 
-import project_img_1 from '@/assets/img/portfolio/3/portfolio-1.jpg'
-import project_img_2 from '@/assets/img/portfolio/3/portfolio-2.jpg'
-import project_img_3 from '@/assets/img/portfolio/3/portfolio-3.jpg'
-import project_img_4 from '@/assets/img/portfolio/3/portfolio-4.jpg'
+import project_img_1 from '@/assets/img/portfolio/3/portfolio-1.png'
+import project_img_2 from '@/assets/img/portfolio/3/portfolio-2.png'
+import project_img_3 from '@/assets/img/portfolio/3/portfolio-3.png'
+import project_img_4 from '@/assets/img/portfolio/3/portfolio-4.png'
 
 type DataType = StaticImageData[]
 const project_imgs: DataType = [
