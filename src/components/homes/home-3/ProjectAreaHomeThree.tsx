@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import Image, { StaticImageData } from 'next/image'
 
@@ -26,12 +26,6 @@ const links = [
 
 const ProjectAreaHomeThree = () => {
   const hoverTextRefs: React.RefObject<HTMLDivElement>[] | any = []
-  useEffect(() => {
-    return () => {
-      hoverTextRefs.forEach((ref) => (ref.current = null))
-    }
-  }, [])
-
   const moveText = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
     const hoverTextRef = hoverTextRefs[index]
 

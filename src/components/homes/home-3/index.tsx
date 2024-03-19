@@ -4,9 +4,9 @@ import HeaderThree from '@/layouts/headers/HeaderThree'
 import HeroAreaHomeThree from './HeroAreaHomeThree'
 import ServiceAreaHomeThree from './ServiceAreaHomeThree'
 import ProjectAreaHomeThree from './ProjectAreaHomeThree'
-import TestimonialAreaHomeTwo from '../home-2/TestimonialAreaHomeTwo'
 import ContactArea from '@/components/contact/ContactArea'
 import FooterFour from '@/layouts/footers/FooterFour'
+import ProjectDisplay from './ProjectDisplay'
 
 const HomeThree = () => {
   return (
@@ -18,7 +18,7 @@ const HomeThree = () => {
             <HeroAreaHomeThree />
             <ServiceAreaHomeThree />
             <ProjectAreaHomeThree />
-            <TestimonialAreaHomeTwo />
+            <ProjectDisplay />
             <ContactArea />
           </main>
           <FooterFour />
